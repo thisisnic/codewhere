@@ -1,4 +1,5 @@
 #' @import httr
+#' @noRd
 extract_url_cran <- function(package_name) {
   cran_description_url <- paste0("https://cran.r-project.org/web/packages/", package_name, "/DESCRIPTION")
   response <- GET(cran_description_url)
@@ -30,6 +31,7 @@ extract_url_cran <- function(package_name) {
     return(urls[gh_urls])
   }
 }
+
 
 extract_bioc_url <- function(package_name) {
   paste0("https://code.bioconductor.org/browse/", package_name)
