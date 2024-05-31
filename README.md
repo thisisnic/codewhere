@@ -18,8 +18,6 @@ devtools::install_github("thisisnic/codewhere")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(codewhere)
 code_where("dplyr")
