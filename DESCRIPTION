@@ -7,8 +7,8 @@ Authors@R: c(
   )
 Description: Find the location of the code for an R package on CRAN, BioConductor, or GitHub.
 License: MIT + file LICENSE
-URL: https://thisisnic.github.io/codewhere, 
-  https://github.com/thisisnic/codewhere
+URL: https://thisisnic.github.io/codewhere/, 
+  https://github.com/thisisnic/codewhere/
 BugReports: https://github.com/thisisnic/codewhere/issues
 Encoding: UTF-8
 Imports: 
