@@ -1,7 +1,7 @@
 with_mock_dir("cran_tests", {
   test_that("code_where can extract package URL for CRAN packages", {
     expect_equal(code_where("dplyr"), "https://github.com/tidyverse/dplyr")
-    expect_null(code_where("hiiamnicandthisismypackage"))
+    expect_null(code_where("madeuppkgname"))
     expect_null(code_where("RobinCar"))
   })
 })

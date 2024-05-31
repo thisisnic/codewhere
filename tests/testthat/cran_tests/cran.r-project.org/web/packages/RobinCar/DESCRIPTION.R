@@ -1,10 +1,10 @@
 structure(list(url = "https://cran.r-project.org/web/packages/RobinCar/DESCRIPTION", 
-    status_code = 200L, headers = structure(list(date = "Fri, 31 May 2024 08:10:15 GMT", 
+    status_code = 200L, headers = structure(list(date = "Fri, 31 May 2024 08:22:01 GMT", 
         server = "Apache", `last-modified` = "Mon, 20 May 2024 20:20:04 GMT", 
         etag = "\"629-618e86d410af5\"", `accept-ranges` = "bytes", 
         `content-length` = "1577"), class = c("insensitive", 
     "list")), all_headers = list(list(status = 200L, version = "HTTP/1.1", 
-        headers = structure(list(date = "Fri, 31 May 2024 08:10:15 GMT", 
+        headers = structure(list(date = "Fri, 31 May 2024 08:22:01 GMT", 
             server = "Apache", `last-modified` = "Mon, 20 May 2024 20:20:04 GMT", 
             etag = "\"629-618e86d410af5\"", `accept-ranges` = "bytes", 
             `content-length` = "1577"), class = c("insensitive", 
@@ -170,7 +170,7 @@ structure(list(url = "https://cran.r-project.org/web/packages/RobinCar/DESCRIPTI
     0x74, 0x69, 0x6f, 0x6e, 0x3a, 0x20, 0x32, 0x30, 0x32, 0x34, 
     0x2d, 0x30, 0x35, 0x2d, 0x32, 0x30, 0x20, 0x32, 0x30, 0x3a, 
     0x32, 0x30, 0x3a, 0x30, 0x32, 0x20, 0x55, 0x54, 0x43, 0x0a
-    )), date = structure(1717143015, class = c("POSIXct", "POSIXt"
-    ), tzone = "GMT"), times = c(redirect = 0, namelookup = 5.1e-05, 
-    connect = 0, pretransfer = 0.000171, starttransfer = 0.034626, 
-    total = 0.034669)), class = "response")
+    )), date = structure(1717143721, class = c("POSIXct", "POSIXt"
+    ), tzone = "GMT"), times = c(redirect = 0, namelookup = 9.1e-05, 
+    connect = 0, pretransfer = 0.000257, starttransfer = 0.036753, 
+    total = 0.036812)), class = "response")
