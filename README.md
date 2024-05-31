@@ -22,7 +22,7 @@ devtools::install_github("thisisnic/codewhere")
 library(codewhere)
 code_where("dplyr")
 #> [1] "https://github.com/tidyverse/dplyr"
-code_where("BiocVersion", package_type = "bioc")
-#> [1] "https://code.bioconductor.org/browse/BiocVersion"
+code_where("GenomeInfoDb", package_type = "bioc")
+#> [1] "https://code.bioconductor.org/browse/GenomeInfoDb"
 ```
 
