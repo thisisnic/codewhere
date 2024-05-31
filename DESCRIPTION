@@ -1,0 +1,17 @@
+Package: codewhere
+Type: Package
+Title: Find the location of an R package's code
+Version: 0.1.0
+Authors@R: c(
+    person("Nic", "Crane", ,"thisisnic@gmail.com", role = c("aut", "cre"))
+  )
+Description: Find the location of the code for an R package on CRAN, BioConductor, or GitHub.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: 
+    httr
+Suggests: 
+    httptest,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1

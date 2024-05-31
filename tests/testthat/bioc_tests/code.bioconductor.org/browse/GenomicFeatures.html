@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bioconductor Code: GenomicFeatures</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3792ad">
+        <meta name="msapplication-TileColor" content="#3792ad">
+        <meta name="theme-color" content="#1a81c2">
+
+        <meta name="keywords" content="bioconductor, source code, package, GenomicFeatures">
+
+        <link rel="canonical" href="https://code.bioconductor.org/browse/GenomicFeatures/">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="/browse/themes/bioconductor/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/browse/themes/bioconductor/css/fontawesome.css">
+        <link rel="stylesheet" type="text/css" href="/browse/themes/bioconductor/css/gitgraph.css">
+        <!--[if lt IE 9]>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/html5.js"></script>
+        <![endif]-->
+        
+        <meta property="og:url" content="https://code.bioconductor.org/browse/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Bioconductor Code: GenomicFeatures">
+        <meta property="og:description" content="Browse the content of Bioconductor software packages.">
+        <meta property="og:image" content="https://code.bioconductor.org/images/bioc_code_browse_og.png">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Bioconductor Code: GenomicFeatures">
+        <meta name="twitter:site" content="@Bioconductor">
+        <meta name="twitter:image" content="https://code.bioconductor.org/images/bioc_code_browse_square_blue.png">
+        <meta name="twitter:image:all" content="Logo of Bioconductor code website.">
+
+        <!-- matomo used for visitor counting; required to justify de.NBI funding -->
+        <script type="text/javascript">
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="https://tr-denbi.embl.de/heimdall/";
+                _paq.push(['setTrackerUrl', u+'p.php']);
+                _paq.push(['setSiteId', '37']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.src=u+'p.js'; s.parentNode.insertBefore(g,s);
+            })(); 
+        </script>
+    </head>
+
+    <body>
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/browse/">
+                <img class="navbar-left-img" src="/browse/themes/bioconductor/img/bioc_code_browse_square.png" alt="Bioconductor Logo" title="Bioconductor Git Browser">
+            </a>
+            <span class="navbar-brand navbar-brand-centre d-none d-sm-inline">
+                <img class="navbar-centre-img" src="/browse/themes/bioconductor/img/bioc_code_browse_nologo.png" alt="Bioconductor Code Browse Large Logo" title="Bioconductor Code Tools">
+            </span>
+        </div>
+        <p class="navbar-text navbar-right">
+            <a class="navbar-barlink" href="/about.html">
+                <span class="fa fa-info-circle"></span>
+                <span class="nav-text">&nbsp;About</span>
+            </a>
+        </p>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="header row">
+            <div class="col-sm-12">
+            	<div class="tab-border nav-tabs">
+                                        <form class="pull-right" action="/browse/GenomicFeatures/tree/devel/search" method="POST">
+                        <input type="search" name="query" class="form-control input-sm" placeholder="Search tree...">
+                    </form>
+                    
+                                            <div class="btn-group pull-left space-right">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">browsing: <strong>devel</strong> <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li class="dropdown-header">Branches</li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_10/">RELEASE_2_10</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_11/">RELEASE_2_11</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_12/">RELEASE_2_12</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_13/">RELEASE_2_13</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_14/">RELEASE_2_14</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_5/">RELEASE_2_5</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_6/">RELEASE_2_6</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_7/">RELEASE_2_7</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_8/">RELEASE_2_8</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_2_9/">RELEASE_2_9</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_0/">RELEASE_3_0</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_1/">RELEASE_3_1</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_10/">RELEASE_3_10</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_11/">RELEASE_3_11</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_12/">RELEASE_3_12</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_13/">RELEASE_3_13</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_14/">RELEASE_3_14</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_15/">RELEASE_3_15</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_16/">RELEASE_3_16</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_17/">RELEASE_3_17</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_18/">RELEASE_3_18</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_19/">RELEASE_3_19</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_2/">RELEASE_3_2</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_3/">RELEASE_3_3</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_4/">RELEASE_3_4</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_5/">RELEASE_3_5</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_6/">RELEASE_3_6</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_7/">RELEASE_3_7</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_8/">RELEASE_3_8</a></li>
+                    <li><a href="/browse/GenomicFeatures/RELEASE_3_9/">RELEASE_3_9</a></li>
+                    <li><a href="/browse/GenomicFeatures/devel/">devel</a></li>
+                    </ul>
+</div>                    
+                    <ul class="nav nav-tabs">
+    <li class="active"><a href="/browse/GenomicFeatures/devel/">Files</a></li>
+    <li><a href="/browse/GenomicFeatures/commits/devel">Commits</a></li>
+    <li><a href="/browse/GenomicFeatures/stats/devel">Stats</a></li>
+  	<li><a href="/browse/GenomicFeatures/network/devel">Network</a></li>
+  	<li><a href="/browse/GenomicFeatures/treegraph?branch=devel">Graph</a></li>
+</ul>
+                </div>
+            </div>
+        </div>
+
+            <ol class="breadcrumb">
+    <li><a href="/browse/GenomicFeatures/tree/devel/">GenomicFeatures</a></li>
+    
+                <div class="pull-right">
+                <div class="btn-group download-buttons">
+                                        <a type="button" href="#" class="btn btn-default btn-xs" title="Show remotes to clone this repository." id="clone-button-show">Clone</a>
+                                        <a type="button" href="/browse/GenomicFeatures/zipball/devel" class="btn btn-default btn-xs" title="Download 'devel' as a ZIP archive">ZIP</a>
+                    <a type="button" href="/browse/GenomicFeatures/tarball/devel" class="btn btn-default btn-xs" title="Download 'devel' as a TAR archive">TAR</a>
+                </div>
+		        <div class="download-buttons rss-button">
+		            <a href="/browse/GenomicFeatures/devel/rss/"><span class="fa fa-rss rss-icon"></span></a>
+		        </div>
+            </div>
+                        <div id="clone-popup">
+                <div id="clone-popup-inner-wrapper">
+                    <a class="close" href="#" id="clone-button-hide">&times;</a>
+                    <div class="btn-group">
+                                                <button type="button" class="btn btn-default active" id="clone-button-ssh">SSH</button>
+                                                                        <button type="button" class="btn btn-default" id="clone-button-http">HTTPS</button>
+                                            </div><br />
+                                        <input type="text" class="form-control visible" id="clone-input-ssh" value="git clone git@git.bioconductor.org:packages/GenomicFeatures">
+                                                            <input type="text" class="form-control" id="clone-input-http" value="git clone https://git.bioconductor.org/packages/GenomicFeatures">
+                                    </div>
+            </div>
+                    </ol>
+
+        <div class="table-border">
+    <table class="table tree">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Mode</th>
+                <th>Size</th>
+            </tr>
+        </thead>
+        <tbody>
+                                    <tr>
+                <td><span class="fa fa-folder-open"></span> <a href="/browse/GenomicFeatures/tree/devel/R/">R</a></td>
+                <td>040000</td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-folder-open"></span> <a href="/browse/GenomicFeatures/tree/devel/inst/">inst</a></td>
+                <td>040000</td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-folder-open"></span> <a href="/browse/GenomicFeatures/tree/devel/man/">man</a></td>
+                <td>040000</td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-folder-open"></span> <a href="/browse/GenomicFeatures/tree/devel/tests/">tests</a></td>
+                <td>040000</td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-folder-open"></span> <a href="/browse/GenomicFeatures/tree/devel/vignettes/">vignettes</a></td>
+                <td>040000</td>
+                <td></td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/.BBSoptions">.BBSoptions</a></td>
+                <td>100644</td>
+                <td>0 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/.Rbuildignore">.Rbuildignore</a></td>
+                <td>100644</td>
+                <td>0 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/.gitignore">.gitignore</a></td>
+                <td>100644</td>
+                <td>0 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/DESCRIPTION">DESCRIPTION</a></td>
+                <td>100644</td>
+                <td>3 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/NAMESPACE">NAMESPACE</a></td>
+                <td>100644</td>
+                <td>3 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/NEWS">NEWS</a></td>
+                <td>100644</td>
+                <td>32 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/README.md">README.md</a></td>
+                <td>100644</td>
+                <td>0 kb</td>
+            </tr>
+                        <tr>
+                <td><span class="fa fa-file-text-o"></span> <a href="/browse/GenomicFeatures/blob/devel/TODO">TODO</a></td>
+                <td>100644</td>
+                <td>1 kb</td>
+            </tr>
+                    </tbody>
+    </table>
+    </div>
+                <div class="readme-view">
+            <div class="md-header">
+                <span class="meta">README.md</span>
+            </div>
+            <div id="md-content">[&lt;img src=&quot;https://www.bioconductor.org/images/logo/jpg/bioconductor_logo_rgb.jpg&quot; width=&quot;200&quot; align=&quot;right&quot;/&gt;](https://bioconductor.org/)
+
+**GenomicFeatures** is an R/Bioconductor package for conveniently importing and querying gene models in R.
+
+See https://bioconductor.org/packages/GenomicFeatures for more information including how to install the release version of the package (please refrain from installing directly from GitHub).
+
+</div>
+        </div>
+    
+    <hr />
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <p>Powered by <a href="https://github.com/klaussilveira/gitlist">GitList</a></p>
+    </div>
+</div>
+</footer>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/raphael.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/bootstrap.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/codemirror.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/showdown.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/table.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/main.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/networkGraph.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/gitgraph.js"></script>
+        <script type="application/javascript" src="/browse/themes/bioconductor/js/draw.js"></script>
+        <!-- ensure we scroll to anchor -->
+        <script type="text/javascript">
+              var hashSplit = location.href.split('#');
+              var curHash= hashSplit[1];
+              if (typeof curHash !== 'undefined') {
+                window.location.hash = curHash;
+              }
+        </script>
+            </body>
+</html>
