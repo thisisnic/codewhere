@@ -11,6 +11,14 @@ code_where(package_name, package_type = "cran")
 
 \item{package_type}{One of "cran", "bioc", or "github"}
 }
+\value{
+Path to where code can be found or NULL
+}
 \description{
 Find a package's code
+}
+\examples{
+\dontrun{
+code_where("dplyr")
+}
 }

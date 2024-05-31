@@ -1,5 +1,5 @@
 #' @import httr
-extract_url_cran <- function(package_name){
+extract_url_cran <- function(package_name) {
   cran_description_url <- paste0("https://cran.r-project.org/web/packages/", package_name, "/DESCRIPTION")
   response <- GET(cran_description_url)
 
@@ -16,7 +16,7 @@ extract_url_cran <- function(package_name){
 
   url_line <- grepl("^URL", desc_by_line)
 
-  if(!any(url_line)){
+  if (!any(url_line)) {
     return()
   }
 
@@ -26,31 +26,30 @@ extract_url_cran <- function(package_name){
 
   gh_urls <- grepl("github.com|gitlab.com", urls)
 
-  if(any(gh_urls)){
+  if (any(gh_urls)) {
     return(urls[gh_urls])
   }
 }
 
-extract_bioc_url <- function(package_name){
+extract_bioc_url <- function(package_name) {
   paste0("https://code.bioconductor.org/browse/", package_name)
 }
 
-extract_github_url <- function(package_name){
-  if(!check_repo_format(package_name)){
+extract_github_url <- function(package_name) {
+  if (!check_repo_format(package_name)) {
     warning(
       paste0(
         "Could not parse GitHub package name `",
-        package_name ,
+        package_name,
         "`.\nGitHub package name should be supplied in format <owner>/<repo>"
       ),
-      call.=FALSE
+      call. = FALSE
     )
-  }
-  else{
+  } else {
     return(paste0("https://github.com/", package_name))
   }
 }
 
-check_repo_format <- function(x){
+check_repo_format <- function(x) {
   grepl("^[a-zA-Z0-9-]+(?<!-)/[a-zA-Z0-9-_]+$", x, perl = TRUE)
 }
