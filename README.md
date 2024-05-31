@@ -24,5 +24,7 @@ This is a basic example which shows you how to solve a common problem:
 library(codewhere)
 code_where("dplyr")
 #> [1] "https://github.com/tidyverse/dplyr"
+code_where("BiocVersion", package_type = "bioc")
+#> [1] "https://code.bioconductor.org/browse/BiocVersion"
 ```
 
