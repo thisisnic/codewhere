@@ -5,9 +5,7 @@
 #' @export
 #' @return Path to where code can be found or NULL
 #' @examples
-#' \dontrun{
 #' code_where("dplyr")
-#' }
 code_where <- function(package_name, package_type = "cran") {
   match.arg(package_type, c("cran", "bioc", "github"))
 

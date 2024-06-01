@@ -18,7 +18,5 @@ Path to where code can be found or NULL
 Find a package's code
 }
 \examples{
-\dontrun{
 code_where("dplyr")
-}
 }
