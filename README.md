@@ -1,10 +1,9 @@
-
 # codewhere
 
 <!-- badges: start -->
   [![R-CMD-check](https://github.com/thisisnic/codewhere/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/thisisnic/codewhere/actions/workflows/R-CMD-check.yaml)
-  <!-- badges: end -->
-
+[![CRAN status](https://www.r-pkg.org/badges/version/codewhere)](https://CRAN.R-project.org/package=codewhere)
+<!-- badges: end -->
 The goal of codewhere is to help you find the location of the code associated with an R package.
 
 ## Installation
